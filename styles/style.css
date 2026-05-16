@@ -228,10 +228,6 @@
   height: 21px;
 }
 
-.button:hover .save-button__icon {
-  fill: var(--svg-button-color);
-}
-
 .card__like-button {
   min-width: 130px;
   min-height: 38px;
@@ -239,7 +235,14 @@
 }
 
 .like-icon {
-  border: none;
+  min-height: 38px;
+  border: 2px transparent;
+  transition: border 0.3s ease;
+}
+
+.like-icon:focus-visible {
+  outline: none;
+  border: var(--base-border);
 }
 
 .close-button {
