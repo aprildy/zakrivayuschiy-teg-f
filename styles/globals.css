@@ -37,9 +37,17 @@ input {
   font-size: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
 ul,
 ol {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden {
