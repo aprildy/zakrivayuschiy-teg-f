@@ -15,4 +15,6 @@
           repeating-linear-gradient(to bottom, #d3d3d3 0px, #d3d3d3 2px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0) 4px),
           linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   --save-dialog-width: clamp(341px, 336.7746px + 1.1268vw, 353px);
+  --icon-heart-contour-color: #000;
+  --animation-fill-color: red;
 }
