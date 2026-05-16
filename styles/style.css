@@ -50,6 +50,7 @@
   font-variation-settings: 'wght' var(--main-font-weight);
   background-image: var(--background-page-gradient);
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 100px 0;
 }
@@ -238,13 +239,15 @@
   padding: 9px 17px;
 }
 
-.card__like-icon {
+.card__icon-button {
+  padding: 0;
   height: 38px;
-  border: 2px transparent;
+  border: 2px solid transparent;
   transition: border 0.3s ease;
 }
 
-.card__like-icon:focus-visible {
+.card__icon-button:focus,
+.card__icon-button:focus-visible {
   outline: none;
   border: var(--base-border);
 }
@@ -355,14 +358,27 @@
   .page {
     min-inline-size: auto;
   }
-  
+
   .page, .header, .main {
     width: 100%;
   }
+
   .save-button {
     flex-direction: column;
+    gap: 8px;
   }
+
+  .header {
+    block-size: 327px;
+    margin: 0 auto 101px;
+  }
+
   .header__heading--main {
     font-size: clamp(25px, 25px + 6.4vw, 49px);
+  }
+
+  .save-button__icon {
+    width: 28px;
+    height: 28px;
   }
 }

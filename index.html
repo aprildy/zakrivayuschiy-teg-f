@@ -26,9 +26,10 @@
         <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
         <div class="card__image-block">
           <img class="card__img filter-sepia" src="./images/01.png"
+               loading = "lazy"
                alt="на картинке изображен человек, сидящий за партой и смотрящий обущающие видео на ноутбуке.
                Рядом с ноутбуком большая стопка книг">
-          <div class="card__label">&lt;/html&gt;</div>
+          <span class="card__label">&lt;/html&gt;</span>
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -67,8 +68,9 @@
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__image-block">
           <img class="card__img filter-contrast" src="./images/02.jpeg"
+               loading = "lazy"
                alt="картинка с отважным цыплеком из мультфильма Цыпленок Цыпа">
-          <div class="card__label">&lt;curious&gt;</div>
+          <span class="card__label">&lt;curious&gt;</span>
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -109,8 +111,9 @@
         <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__image-block">
           <img class="card__img filter-hue-rotate" src="./images/03.jpg"
+               loading = "lazy"
                alt="нарисованный сомневающийся парень со знаками вопросов вокруг себя">
-          <div class="card__label">&lt;doubts&gt;</div>
+          <span class="card__label">&lt;doubts&gt;</span>
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -149,8 +152,9 @@
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="card__image-block">
           <img class="card__img filter-grayscale" src="./images/04.jpg"
+               loading = "lazy"
                alt="уставшая девочка из аниме, записыающая что-то в тетрадь">
-          <div class="card__label">&lt;hard work&gt;</div>
+          <span class="card__label">&lt;hard work&gt;</span>
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -190,8 +194,9 @@
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="card__image-block">
           <img class="card__img filter-mix" src="./images/05.jpg"
+               loading = "lazy"
                alt="букет цветов на подоконнике">
-          <div class="card__label">&lt;support&gt;</div>
+          <span class="card__label">&lt;support&gt;</span>
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -232,8 +237,9 @@
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="card__image-block">
           <img class="card__img filter-blur" src="./images/06.jpg"
+               loading = "lazy"
                alt="изображены css-переменные">
-          <div class="card__label">&lt;variables&gt;</div>
+          <span class="card__label">&lt;variables&gt;</span>
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -272,8 +278,9 @@
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="card__image-block">
           <img class="card__img filter-invert" src="./images/07.jpeg"
+               loading = "lazy"
                alt="часы с картины Сальвадора Дали">
-          <div class="card__label">&lt;time&gt;</div>
+          <span class="card__label">&lt;time&gt;</span>
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -313,8 +320,9 @@
         <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__image-block">
           <img class="card__img filter-brightness" src="./images/08.jpg"
+               loading = "lazy"
                alt="девушка за ноутбуком">
-          <div class="card__label">&lt;inspiration&gt;</div>
+          <span class="card__label">&lt;inspiration&gt;</span>
         </div>
         <div class="card__content">
           <div class="card__text">
@@ -356,7 +364,7 @@
       <div class="buttons">
         <button type="button" class="button save-button" onclick="window['save-dialog'].showModal();">
           <svg class="save-button__icon">
-            <use href="svg/floppy.svg/#floppy"/>
+            <use href="svg/floppy.svg#floppy"/>
           </svg>
           <span class="button__text">Сохранить на память</span>
         </button>
@@ -364,9 +372,9 @@
       <dialog class="dialog save-dialog" id="save-dialog">
         <div class="save-dialog__wrapper">
            <div class="save-dialog__content">
-             <svg width="39" height="39" viewBox="0 0 39 39" class="save-dialog__icon">
-              <use href="svg/floppy.svg/#floppy"/>
-             </svg>
+            <svg width="39" height="39" class="save-dialog__icon">
+              <use href="svg/floppy.svg#floppy"/>
+            </svg>
           <p class="save-dialog__text">Вставьте дискету, чтобы продолжить</p>
            </div>
           <form method="dialog" class="save-dialog__buttons">
