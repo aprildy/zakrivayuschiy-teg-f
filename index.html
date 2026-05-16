@@ -282,13 +282,28 @@
         </div>
       </article>
       <div class="buttons">
-        <button type="button" class="button save-button">
+        <button type="button" class="button save-button" onclick="window['save-dialog'].showModal();">
           <svg class="save-button__icon">
             <use href="svg/floppy.svg/#floppy"/>
           </svg>
           <span>Сохранить на память</span>
         </button>
       </div>
+      <dialog class="dialog save-dialog" id="save-dialog">
+        <div class="save-dialog__wrapper">
+           <div class="save-dialog__content">
+             <svg width="39" height="39" viewBox="0 0 39 39" class="save-dialog__icon">
+              <use href="svg/floppy.svg/#floppy"/>
+             </svg>
+          <p class="save-dialog__text">Вставьте дискету, чтобы продолжить</p>
+           </div>
+          <form method="dialog" class="save-dialog__buttons">
+            <button class="button close-button">
+              <span class="button__text">Ок</span>
+            </button>
+          </form>
+        </div>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

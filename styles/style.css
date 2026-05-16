@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, monospace);
   background-color: var(--base-bg-color, #fff);
   width: var(--container-width);
   block-size: 372px;
@@ -120,7 +120,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, monospace);
   font-size: 14px;
   text-transform: uppercase;
   mix-blend-mode: hard-light;
@@ -157,6 +157,7 @@
 }
 
 /*Buttons*/
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -169,7 +170,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, monospace);
   line-height: 1;
   font-size: 14px;
   background-color: #fff;
@@ -194,4 +195,45 @@
 
 .like-icon {
   border: none;
+}
+
+.close-button {
+  padding: 9px 17px;
+  width: 100%;
+}
+
+/*Dialog*/
+
+.save-dialog {
+  padding: 30px;
+  width: var(--save-dialog-width);
+  border: var(--base-border);
+}
+
+.save-dialog__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.save-dialog__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  gap: 20px;
+  font-family: var(--accent-font, monospace);
+}
+
+.save-dialog__text {
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+.save-dialog__icon {
+  flex-shrink: 0;
+}
+
+.save-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
 }
